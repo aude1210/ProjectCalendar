@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectcalendar>
+    <projets>
+        <projet>
+            <identificateur>LO21</identificateur>
+            <titre>Projet LO21</titre>
+            <description>Implémentation d'une application ProjectCalendar</description>
+            <disponibilite></disponibilite>
+            <echeance>2015-06-30T21:26:17</echeance>
+            <taches>
+                <tache preemptive="false" composite="true" unitaire="false">
+                    <identificateur>Conception</identificateur>
+                    <titre>Conception OO</titre>
+                    <disponibilite>2015-06-15T00:00:32</disponibilite>
+                    <echeance>2015-06-20T00:00:32</echeance>
+                </tache>
+                <tache preemptive="false" composite="true" unitaire="false">
+                    <identificateur>Implémentation</identificateur>
+                    <titre>Implémentation + interface graphique</titre>
+                    <disponibilite>2015-06-19T00:00:24</disponibilite>
+                    <echeance>2015-06-22T00:00:24</echeance>
+                </tache>
+                <tache preemptive="false" composite="true" unitaire="false">
+                    <identificateur>Livrables</identificateur>
+                    <titre>Création des livrables</titre>
+                    <disponibilite>2015-06-23T00:00:15</disponibilite>
+                    <echeance>2015-06-28T00:00:15</echeance>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>Reflexion</identificateur>
+                    <titre>Réflexion choix d'implémentation</titre>
+                    <disponibilite>2015-06-15T21:36:57</disponibilite>
+                    <echeance>2015-06-19T21:36:57</echeance>
+                    <duree>240</duree>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>UML</identificateur>
+                    <titre>Écriture digramme de classes UML</titre>
+                    <disponibilite>2015-06-15T21:37:47</disponibilite>
+                    <echeance>2015-06-18T21:37:47</echeance>
+                    <duree>120</duree>
+                </tache>
+                <tache preemptive="false" composite="true" unitaire="false">
+                    <identificateur>Architecture</identificateur>
+                    <titre>Implementation Architecture</titre>
+                    <disponibilite>2015-06-19T00:01:15</disponibilite>
+                    <echeance>2015-06-22T00:00:15</echeance>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>ProjectManager</identificateur>
+                    <titre>classe ProjectManager</titre>
+                    <disponibilite>2015-06-19T00:02:58</disponibilite>
+                    <echeance>2015-06-20T00:00:58</echeance>
+                    <duree>120</duree>
+                    <programmation>
+                        <date>2015-06-19T10:00:32</date>
+                        <heure>10H00</heure>
+                    </programmation>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>Projet</identificateur>
+                    <titre>classe  Projet</titre>
+                    <disponibilite>2015-06-19T00:02:46</disponibilite>
+                    <echeance>2015-06-21T00:00:46</echeance>
+                    <duree>180</duree>
+                    <programmation>
+                        <date>2015-06-19T12:00:58</date>
+                        <heure>12H00</heure>
+                    </programmation>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>etc</identificateur>
+                    <titre>etc</titre>
+                    <disponibilite>2015-06-19T21:43:35</disponibilite>
+                    <echeance>2015-06-21T21:43:35</echeance>
+                    <duree>360</duree>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>Documentation</identificateur>
+                    <titre>Création de la documentation Doxygen</titre>
+                    <disponibilite>2015-06-23T00:02:32</disponibilite>
+                    <echeance>2015-06-27T21:44:32</echeance>
+                    <duree>300</duree>
+                    <programmation>
+                        <date>2015-06-23T17:00:53</date>
+                        <heure>17H00</heure>
+                    </programmation>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>Rapport</identificateur>
+                    <titre>Rédaction rapport</titre>
+                    <disponibilite>2015-06-24T21:45:24</disponibilite>
+                    <echeance>2015-06-27T21:45:24</echeance>
+                    <duree>210</duree>
+                </tache>
+                <tache preemptive="false" composite="false" unitaire="true">
+                    <identificateur>Video</identificateur>
+                    <titre>Enregistrement Video</titre>
+                    <disponibilite>2015-06-26T21:46:28</disponibilite>
+                    <echeance>2015-06-27T21:46:28</echeance>
+                    <duree>60</duree>
+                </tache>
+            </taches>
+        </projet>
+    </projets>
+    <precedences>
+        <precedence id_projet="LO21" id_tache="Implémentation">
+            <id_precedence>Conception</id_precedence>
+        </precedence>
+        <precedence id_projet="LO21" id_tache="Livrables">
+            <id_precedence>Implémentation</id_precedence>
+        </precedence>
+        <precedence id_projet="LO21" id_tache="UML">
+            <id_precedence>Reflexion</id_precedence>
+        </precedence>
+    </precedences>
+    <composites>
+        <composite id_projet="LO21" id_tache="Conception">
+            <id_composant>Reflexion</id_composant>
+            <id_composant>UML</id_composant>
+        </composite>
+        <composite id_projet="LO21" id_tache="Implémentation">
+            <id_composant>Architecture</id_composant>
+        </composite>
+        <composite id_projet="LO21" id_tache="Livrables">
+            <id_composant>Documentation</id_composant>
+            <id_composant>Rapport</id_composant>
+            <id_composant>Video</id_composant>
+        </composite>
+        <composite id_projet="LO21" id_tache="Architecture">
+            <id_composant>ProjectManager</id_composant>
+            <id_composant>Projet</id_composant>
+            <id_composant>etc</id_composant>
+        </composite>
+    </composites>
+    <activites>
+        <activite reunion="false" rdv="true">
+            <identificateur>Entretien stage</identificateur>
+            <titre>Entretien de stage</titre>
+            <disponibilite>2015-06-14T21:47:50</disponibilite>
+            <echeance>2016-06-14T21:47:50</echeance>
+            <duree>90</duree>
+            <lieu>Paris</lieu>
+            <interlocuteur>Le Patron</interlocuteur>
+            <programmation>
+                <date>2015-06-16T12:00:10</date>
+                <heure>12H00</heure>
+            </programmation>
+        </activite>
+        <activite reunion="true" rdv="false">
+            <identificateur>Réunion au sommet</identificateur>
+            <titre>Réunion au sommet</titre>
+            <disponibilite>2015-06-14T21:58:47</disponibilite>
+            <echeance>2016-06-14T21:57:47</echeance>
+            <duree>240</duree>
+            <lieu>UTC</lieu>
+            <participants/>
+        </activite>
+    </activites>
+</projectcalendar>

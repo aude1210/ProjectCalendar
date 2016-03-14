@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectcalendar>
+    <projets>
+        <projet>
+            <identificateur>bla</identificateur>
+            <titre>bla</titre>
+            <description>bla</description>
+            <disponibilite>2015-06-14T21:12:16</disponibilite>
+            <echeance>2018-06-14T21:12:16</echeance>
+            <taches/>
+        </projet>
+    </projets>
+    <precedences/>
+    <composites/>
+    <activites/>
+</projectcalendar>
